@@ -125,6 +125,9 @@ export default function Header({child}: any) {
                         </SidebarMenuButton>
                       </>
                     }
+                    <SidebarMenuButton asChild isActive={true}>
+                      <a href={'/about'}>{'Về Chúng Tôi'}</a>
+                    </SidebarMenuButton>
                   </SidebarMenuItem>
                 </SidebarMenu>
               </SidebarGroupContent>
