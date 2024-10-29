@@ -50,6 +50,13 @@ export default function Home() {
           </p>
         </section>
 
+        <section className="my-8">
+          <h2 className="text-2xl font-semibold">Link nhóm</h2>
+          <p className="mt-4">
+            https://www.facebook.com/groups/1400166613677646
+          </p>
+        </section>
+
         <footer className="text-center my-8">
           <p>&copy; {new Date().getFullYear()} coderkiemcom. Free mã nguồn mở nhưng nghiêm cấm thương mại hóa.</p>
         </footer>
