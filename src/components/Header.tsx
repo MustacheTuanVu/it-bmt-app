@@ -109,6 +109,9 @@ export default function Header({child}: any) {
                       <a href={'/'}>{'Trang Chủ'}</a>
                     </SidebarMenuButton>
                     <SidebarMenuButton asChild isActive={true}>
+                      <a href={'/company'}>{'Danh sách Công Ty'}</a>
+                    </SidebarMenuButton>
+                    <SidebarMenuButton asChild isActive={true}>
                       <a href={'/add-company'}>{'Thêm Công Ty'}</a>
                     </SidebarMenuButton>
                     {status === 'loading' ? null : session ?
@@ -125,9 +128,6 @@ export default function Header({child}: any) {
                         </SidebarMenuButton>
                       </>
                     }
-                    <SidebarMenuButton asChild isActive={true}>
-                      <a href={'/about'}>{'Về Chúng Tôi'}</a>
-                    </SidebarMenuButton>
                   </SidebarMenuItem>
                 </SidebarMenu>
               </SidebarGroupContent>
@@ -142,8 +142,8 @@ export default function Header({child}: any) {
           {/* <Breadcrumb>
             <BreadcrumbList>
               <BreadcrumbItem className="hidden md:block">
-                <BreadcrumbLink href="#">
-                  Building Your Application
+                <BreadcrumbLink href="/about">
+                  VỀ CHÚNG TÔI
                 </BreadcrumbLink>
               </BreadcrumbItem>
               <BreadcrumbSeparator className="hidden md:block" />
